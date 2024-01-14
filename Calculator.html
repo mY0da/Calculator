@@ -14,49 +14,49 @@
 
       <section class="calc-buttons">
         <div class="calc-buttons-rows">
-          <button class="calc-button zero">C</button>
+          <button class="calc-button zero" onclick="clearScreen()">C</button>
 
-          <button class="calc-button">&larr;</button>
+          <button class="calc-button" onclick="removeLastNumber()">&larr;</button>
 
-          <button class="calc-button">&divide;</button>
+          <button class="calc-button" onclick="updateNumber('/')">&divide;</button>
         </div>
 
         <div class="calc-buttons-rows">
-          <button class="calc-button">7</button>
+          <button class="calc-button" onclick="updateNumber('7')">7</button>
 
-          <button class="calc-button">8</button>
+          <button class="calc-button" onclick="updateNumber('8')">8</button>
 
-          <button class="calc-button">9</button>
+          <button class="calc-button" onclick="updateNumber('9')">9</button>
 
-          <button class="calc-button">&times;</button>
+          <button class="calc-button" onclick="updateNumber('*')">&times;</button>
         </div>
 
         <div class="calc-buttons-rows">
-          <button class="calc-button">4</button>
+          <button class="calc-button" onclick="updateNumber('4')">4</button>
 
-          <button class="calc-button">5</button>
+          <button class="calc-button" onclick="updateNumber('5')">5</button>
 
-          <button class="calc-button">6</button>
+          <button class="calc-button" onclick="updateNumber('6')">6</button>
 
-          <button class="calc-button">&minus;</button>
+          <button class="calc-button" onclick="updateNumber('-')">&minus;</button>
         </div>
 
         <div class="calc-buttons-rows">
-          <button class="calc-button">1</button>
+          <button class="calc-button" onclick="updateNumber('1')">1</button>
 
-          <button class="calc-button">2</button>
+          <button class="calc-button" onclick="updateNumber('2')">2</button>
 
-          <button class="calc-button">3</button>
+          <button class="calc-button" onclick="updateNumber('3')">3</button>
 
-          <button class="calc-button">&plus;</button>
+          <button class="calc-button" onclick="updateNumber('+')">&plus;</button>
         </div>
 
         <div class="calc-buttons-rows">
-          <button class="calc-button">&dot;</button>
+          <button class="calc-button" onclick="updateNumber('.')">&dot;</button>
 
-          <button class="calc-button one">0</button>
+          <button class="calc-button one" onclick="updateNumber('0')">0</button>
 
-          <button class="calc-button">&equals;</button>
+          <button class="calc-button" onclick="result()">&equals;</button>
         </div>
       </section>
     </div>
